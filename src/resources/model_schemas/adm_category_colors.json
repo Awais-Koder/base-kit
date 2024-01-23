@@ -1,0 +1,42 @@
+[
+    {
+        "name": "id",
+        "dbType": "bigInteger,true,true",
+        "htmlType": "number",
+        "validations": "",
+        "searchable": false,
+        "fillable": false,
+        "primary": true,
+        "inForm": false,
+        "inIndex": false,
+        "inView": false
+    },
+    {
+        "name": "category_color",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required|string|max:7|string|max:7|string|max:7",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "name": "font_color",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": "required|string|max:7|string|max:7|string|max:7",
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true,
+        "inView": true
+    },
+    {
+        "type": "relation",
+        "relation": "1tm,Category,color_id"
+    }
+]
